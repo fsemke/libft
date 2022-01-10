@@ -4,7 +4,8 @@ We need this library to use it in the future C projects.
 
 # How to use the library
 `make` to compile
-`gcc main.c libft.a`
+
+`gcc main.c libft.a` to compile with a main file
 
 ## libc functions
 - ft_atoi
