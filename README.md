@@ -3,7 +3,7 @@ In libft are a set of rewritten standard C library functions. Its a 42Wolfsburg 
 We need this library to use it in the future C projects.
 
 # How to use the library
-`make` to compile
+`make` to compile the library
 
 `gcc main.c libft.a` to compile with a main file
 
