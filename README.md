@@ -1,5 +1,6 @@
 # libft
-In libft are a set of standard C library functions. Its a 42Wolfsburg project.
+In libft are a set of rewritten standard C library functions. Its a 42Wolfsburg project.
+We need this library to use it in the future C projects.
 
 ## libc functions
 - ft_atoi
