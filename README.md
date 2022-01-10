@@ -2,6 +2,10 @@
 In libft are a set of rewritten standard C library functions. Its a 42Wolfsburg project.
 We need this library to use it in the future C projects.
 
+# How to use the library
+`make` to compile
+`gcc main.c libft.a`
+
 ## libc functions
 - ft_atoi
 - ft_bzero
