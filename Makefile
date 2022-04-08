@@ -6,7 +6,7 @@
 #    By: fsemke <fsemke@student.42wolfsburg.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/16 11:34:52 by fsemke            #+#    #+#              #
-#    Updated: 2021/12/23 15:00:37 by fsemke           ###   ########.fr        #
+#    Updated: 2022/04/08 14:07:23 by fsemke           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,25 +57,34 @@ SRC_B =	ft_lstadd_back.c	\
 		ft_lstmap.c			\
 		ft_lstnew.c			\
 		ft_lstsize.c
+
+SRC_PRINTF = ft_printf.c		\
+		ft_cases.c \
+		ft_helpfunctions.c \
+		ft_struct.c \
+		ft_hex.c \
+		ft_num.c
 		
 OBJ = $(SRC:.c=.o)
 OBJ_B = $(SRC_B:.c=.o)
+OBJ_PRINTF = $(SRC_PRINTF:.c=.o)
 
 CC = gcc
 
 FLAGS = -Wall -Wextra -Werror
 
-all: $(NAME)
+all: $(NAME) $(OBJ_PRINTF)
 
-bonus: $(NAME) $(OBJ_B)
+bonus: $(NAME)
 	ar rc $(NAME) $(OBJ_B)
 
 $(NAME):
 	$(CC) $(FLAGS) -c $(SRC)
-	ar rc $(NAME) $(OBJ)
+	$(CC) $(FLAGS) -c $(addprefix srcs_printf/, $(SRC_PRINTF))
+	ar rc $(NAME) $(OBJ) $(OBJ_PRINTF)
 
 clean:
-	rm -f $(OBJ) $(OBJ_B)
+	rm -f $(OBJ) $(OBJ_B) $(OBJ_PRINTF)
 
 fclean: clean
 	rm -f $(NAME)
