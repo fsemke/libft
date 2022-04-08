@@ -5,6 +5,7 @@ We need this library to use it in the future C projects.
 # How to use the library
 `make` to compile the library
 
+Add libft.h to the program Headerfile, and copy libft.a to the new project directory.
 `gcc main.c libft.a` to compile with a main file
 
 ## libc functions
@@ -59,3 +60,6 @@ We need this library to use it in the future C projects.
 - ft_lstclear
 - ft_lstiter
 - ft_lstmap
+
+## Own added functions
+- ft_printf
