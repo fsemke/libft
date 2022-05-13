@@ -6,7 +6,7 @@
 /*   By: fsemke <fsemke@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 14:47:30 by fsemke            #+#    #+#             */
-/*   Updated: 2022/04/08 13:18:39 by fsemke           ###   ########.fr       */
+/*   Updated: 2022/05/13 10:14:09 by fsemke           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ int	ft_dec_prefix(int length, t_notes *notes)
 {
 	int	cache;
 
+	cache = 0;
 	if (length < notes->precision)
 	{
 		if (notes->minus == 0)
